@@ -291,6 +291,9 @@ void MainWindow::on_pushButton_4_clicked()
         ui->centralWidget->findChild<QGraphicsView*>(graphicsViewName)->setVisible(false);
     }
     ui->label_random_generated_number->setVisible(false);
+
+
+    // blablablabla
 }
 
 
