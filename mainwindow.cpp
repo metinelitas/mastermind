@@ -269,8 +269,7 @@ void MainWindow::initUi()
     }
 }
 
-// Reset
-void MainWindow::on_pushButton_4_clicked()
+void MainWindow::resetGame()
 {
 #define ANSWER_COUNT 12
     QString label_name = "label_";
@@ -291,9 +290,12 @@ void MainWindow::on_pushButton_4_clicked()
         ui->centralWidget->findChild<QGraphicsView*>(graphicsViewName)->setVisible(false);
     }
     ui->label_random_generated_number->setVisible(false);
+}
 
-
-    // blablablabla
+// Reset
+void MainWindow::on_pushButton_4_clicked()
+{
+    resetGame();
 }
 
 

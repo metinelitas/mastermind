@@ -32,6 +32,7 @@ private:
     void drawCircles();
     void initUi();
     void generateRandomNumber();
+    void resetGame();
 };
 
 #endif // MAINWINDOW_H
