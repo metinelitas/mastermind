@@ -150,8 +150,6 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-
-
     if (currentGuessIndex==13)
     {
         int ret;
@@ -162,9 +160,7 @@ void MainWindow::on_pushButton_2_clicked()
 
         resetGame();
         return;
-
     }
-
 
     userEnteredNumberArray[4] = ui->comboBox_1->currentIndex() + 1;
     userEnteredNumberArray[3] = ui->comboBox_2->currentIndex() + 1;
