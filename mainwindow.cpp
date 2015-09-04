@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "Guessnumber.h"
 #include "QPainter"
+#include "QMessageBox"
 
 
 
@@ -69,6 +70,7 @@ int pow_int(int a,int b)
 
 void MainWindow::checkNumber()
 {
+
     int random_number_array[5];
 
     int temp_random_generated_number;
@@ -148,6 +150,22 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+
+
+    if (currentGuessIndex==13)
+    {
+        int ret;
+        QMessageBox msgBox;
+        QString numberString = QString::number(randomGeneratedNumber);
+        msgBox.setText("No more moves! The number was " + numberString);
+        ret = msgBox.exec();
+
+        resetGame();
+        return;
+
+    }
+
+
     userEnteredNumberArray[4] = ui->comboBox_1->currentIndex() + 1;
     userEnteredNumberArray[3] = ui->comboBox_2->currentIndex() + 1;
     userEnteredNumberArray[2] = ui->comboBox_3->currentIndex() + 1;
