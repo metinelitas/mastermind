@@ -76,7 +76,7 @@ void MainWindow::checkNumber()
     temp_random_generated_number = randomGeneratedNumber;
 
 
-
+    //blablabla
     for(int i=4;i>=0;i--)
     {
         random_number_array[i] = (temp_random_generated_number / pow_int(10,i));
